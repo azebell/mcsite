@@ -7,7 +7,7 @@ from .forms import ProjectRequestForm
 
 def index(request):
     context = { "project_request_form": ProjectRequestForm() }
-    return render(request, "website/index.html", context)
+    return render(request, "website/homepage.html", context)
 
 def projects(request):
     return render(request, "website/projects.html")
